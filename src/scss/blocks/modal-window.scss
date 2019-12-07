@@ -1,0 +1,76 @@
+.modal-window{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    max-width: 440px;
+    min-width: 320px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px rgba(172, 166, 166, 0.5);
+    padding: 31px; //меняется на 16 при 320px
+}
+.modal-title{
+    font-family:  TTLakes, Tahoma, sans-serif;
+    font-size: 24px;
+    line-height: 32px;    
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    font-weight: bold;
+    margin-bottom: 8px;
+    &::before{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 3px;
+        height: 40px;
+        background: #41F6D7;
+        border-radius: 2px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        transform: translateX(-31px);
+    }
+}
+
+.modal-input{
+    max-width: 376px;
+    min-width: 288px;
+    height: 48px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    margin-top: 16px;
+    padding: 16px 12px;
+    outline: none;
+}
+::-webkit-input-placeholder {font-family: TTLakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC;}
+::-moz-placeholder          {font-family: TTLakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC;}/* Firefox 19+ */
+:-moz-placeholder           {font-family: TTLakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC;}/* Firefox 18- */
+:-ms-input-placeholder {font-family: TTLakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC;}
+
+.modal-text{
+    font-family: TTLakes;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E82;
+}
+.modal-link{
+    color: red;
+}
