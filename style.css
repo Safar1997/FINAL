@@ -1,15 +1,167 @@
 @font-face {
-  font-family: 'Comic';
-  src: url(./fonts/comic.ttf) format("truetype");
-  font-weight: normal;
-  font-style: italic; }
+  font-family: 'TTLakes';
+  src: url(./fonts/TTLakes-Regular.woff2) format("woff2"), url(./fonts/TTLakes-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: red;
-  color: #fff; }
+@font-face {
+  font-family: 'TTLakes';
+  src: url(./fonts/TTLakes-Medium.woff2) format("woff2"), url(./fonts/TTLakes-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'TTLakes';
+  src: url(./fonts/TTLakes-Bold.woff2) format("woff2"), url(./fonts/TTLakes-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+.btn-before::before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #FF3E79;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%; }
+
+.reset-btn {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  cursor: pointer; }
+
+.reset-list {
+  list-style: none;
+  padding: 0; }
+
+.reset-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
+
+.section-title {
+  font-family: TTLakes, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1.39%, #F8F8F8), to(#FFFFFF));
+  background: -o-linear-gradient(left, #F8F8F8 1.39%, #FFFFFF 100%);
+  background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+  color: #7E7E82;
+  height: 57px;
+  font-weight: normal;
+  border-top: 1px solid #D9FFF5;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px; }
+
+.modal-window {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  max-width: 440px;
+  min-width: 320px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px 5px rgba(172, 166, 166, 0.5);
+          box-shadow: 0 0 10px 5px rgba(172, 166, 166, 0.5);
+  padding: 31px; }
+
+.modal-title {
+  font-family: TTLakes, Tahoma, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1B1C21;
+  font-weight: bold;
+  margin-bottom: 8px; }
+  .modal-title::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 40px;
+    background: #41F6D7;
+    border-radius: 2px;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+        -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+    -webkit-transform: translateX(-31px);
+        -ms-transform: translateX(-31px);
+            transform: translateX(-31px); }
+
+.modal-input {
+  max-width: 376px;
+  min-width: 288px;
+  height: 48px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 16px 12px;
+  outline: none; }
+
+::-webkit-input-placeholder {
+  font-family: TTLakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #B5B6BC; }
+
+::-moz-placeholder {
+  font-family: TTLakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #B5B6BC; }
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  font-family: TTLakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #B5B6BC; }
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  font-family: TTLakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #B5B6BC; }
+
+.modal-text {
+  font-family: TTLakes;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E7E82; }
+
+.modal-link {
+  color: red; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
 
 
 /*# sourceMappingURL=style.css.map*/
