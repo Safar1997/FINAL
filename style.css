@@ -29,6 +29,9 @@
   background-position: 50% 50%;
   border-radius: 50%; }
 
+.btn-before:hover::before {
+  background-color: brown; }
+
 .reset-btn {
   border: none;
   border-radius: 0;
@@ -66,6 +69,9 @@
   padding-left: 32px; }
 
 .modal-window {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -73,12 +79,15 @@
   width: 100%;
   max-width: 440px;
   min-width: 320px;
-  overflow: hidden;
-  -webkit-box-shadow: 0 0 10px 5px rgba(172, 166, 166, 0.5);
-          box-shadow: 0 0 10px 5px rgba(172, 166, 166, 0.5);
-  padding: 31px; }
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  padding: 31px;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s; }
 
 .modal-title {
+  margin-top: -10px;
   font-family: TTLakes, Tahoma, sans-serif;
   font-size: 24px;
   line-height: 32px;
@@ -111,7 +120,12 @@
   border-radius: 8px;
   margin-top: 16px;
   padding: 16px 12px;
-  outline: none; }
+  outline: none;
+  font-size: 16px;
+  line-height: 24px; }
+
+.modal-input--message {
+  height: initial; }
 
 ::-webkit-input-placeholder {
   font-family: TTLakes;
@@ -153,11 +167,203 @@
 .modal-link {
   color: red; }
 
+.modal-button {
+  display: block;
+  width: 136px;
+  height: 32px;
+  margin-right: 17px;
+  margin-left: auto;
+  margin-top: 5px;
+  border-radius: 16px;
+  background-color: #FF3E79;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: TTLakes;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: -0.15px;
+  text-transform: uppercase; }
+  .modal-button:hover {
+    background-color: brown; }
+
+.modal-arrow {
+  margin-left: 15px; }
+
+.modal-exit {
+  position: absolute;
+  right: 470px;
+  top: 20px; }
+
+.modal-exit::before {
+  background-image: url(./static/close.svg); }
+
+@media (max-width: 320px) {
+  .modal-window {
+    padding: 16px; }
+  .modal-title {
+    margin-top: 70px; }
+    .modal-title::before {
+      -webkit-transform: matrix(-1, 0, 0, 1, -15, 0);
+          -ms-transform: matrix(-1, 0, 0, 1, -15, 0);
+              transform: matrix(-1, 0, 0, 1, -15, 0); }
+  .modal-exit {
+    -webkit-transform: translateX(210px);
+        -ms-transform: translateX(210px);
+            transform: translateX(210px); }
+  .modal-input {
+    width: 100%;
+    max-width: 288px; } }
+
+.body-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.body-container-aside {
+  font-family: TTLakes, sans-serif;
+  max-width: 320px;
+  width: 100%;
+  padding: 30px 25px;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+  border-right: 1px solid rgba(172, 166, 166, 0.5); }
+  .body-container-aside .body-container-aside__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .body-container-aside__exit {
+    display: none; }
+  .body-container-aside__search {
+    margin-right: 0px;
+    margin-left: auto; }
+  .body-container-aside__input {
+    display: none;
+    vertical-align: middle;
+    height: 40px;
+    width: 120px;
+    margin-right: 0px;
+    margin-left: auto;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    outline: none; }
+  .body-container-aside__ul {
+    margin: 0px;
+    margin-top: 38px; }
+  .body-container-aside__li {
+    font-family: TTLakes;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    margin-top: 28px; }
+  .body-container-aside__li--chosen {
+    color: #7E7E82; }
+  .body-container-aside__li--chosen::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 40px;
+    background: #41F6D7;
+    border-radius: 2px;
+    -webkit-transform: translateX(-25px);
+        -ms-transform: translateX(-25px);
+            transform: translateX(-25px); }
+  .body-container-aside__footer {
+    margin-top: 240px; }
+  .body-container-aside__connect-form .connect-form__message {
+    margin-left: 16px; }
+  .body-container-aside__connect-form .connect-form__profile {
+    margin-left: 16px;
+    margin-right: auto; }
+  .body-container-aside__connect-information {
+    margin-top: 16px; }
+  .body-container-aside__info {
+    display: block;
+    font-weight: 500; }
+  .body-container-aside .phone {
+    margin-top: 12px;
+    font-weight: bold; }
+  .body-container-aside__language {
+    margin-top: 40px; }
+    .body-container-aside__language .ru {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: red; }
+    .body-container-aside__language .ru:hover {
+      color: red; }
+    .body-container-aside__language .en {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #1B1C21;
+      margin-left: 7px; }
+    .body-container-aside__language .en:hover {
+      color: red; }
+    .body-container-aside__language .ch {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #1B1C21;
+      margin-left: 7px; }
+    .body-container-aside__language .ch:hover {
+      color: red; }
+
+@media (max-width: 1439px) {
+  .body-container-aside__exit {
+    display: initial;
+    margin-right: 10px; } }
+
+@media (max-width: 320px) {
+  .body-container-aside__footer {
+    margin-top: 32px; } }
+
+.btn-burger::before {
+  background-image: url(./static/menu.svg); }
+
+.btn-check-status::before {
+  background-image: url(./static/status.svg); }
+
+.btn-contact::before {
+  background-image: url(./static/user.svg); }
+
+.btn-exit::before {
+  background-image: url(./static/close.svg); }
+
+.btn-message::before {
+  background-image: url(./static/message.svg); }
+
+.btn-phone::before {
+  background-image: url(./static/call.svg); }
+
+.btn-repair::before {
+  background-image: url(./static/tools.svg); }
+
+.btn-search::before {
+  background-image: url(./static/search.svg); }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0px;
   padding: 0px; }
+
+body {
+  margin: 0px; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;

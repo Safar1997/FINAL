@@ -16,14 +16,67 @@
 <link href="style.css" rel="stylesheet"></head>
 <body>
     
-    <div class="modal-window">
-            <h2 class="modal-title">Обратная связь</h2>
-            <input type="text" class="modal-input" placeholder="Имя">
-            <input type="text" class="modal-input">
-            <input type="text" class="modal-input">
-            <input type="text" class="modal-input">
-            <p class="modal-text">Some kind of <a href="#" class="modal-link reset-link">text here</a></p>
-        
+    <div class="body-container">
+        <aside class="body-container-aside">
+            <header class="body-container-aside__header">
+                <button class="body-container-aside__exit reset-btn btn-exit btn-before"></button>
+                <a href="#" class="reset-link"><img src="../src/img/logo.svg" alt="Лого" title="Логотип компании" class=""></a>
+                <input type="search" name="search" id="" class="body-container-aside__input"> 
+                <button class="body-container-aside__search reset-btn btn-search btn-before"></button>        
+            </header>
+            <section class="body-container-aside__section">
+                <nav class="body-container-aside__nav">
+                    <ul class="body-container-aside__ul reset-list">
+                        <li class="body-container-aside__li"><a href="#" class="reset-link">Ремонт техники</a></li>
+                        <li class="body-container-aside__li body-container-aside__li--chosen"><a href="#" class="reset-link">Услуги и сервисы</a></li>
+                        <li class="body-container-aside__li"><a href="#" class="reset-link">Корпоративным клиентам</a></li>
+                        <li class="body-container-aside__li"><a href="#" class="reset-link">Продавцам техники</a></li>
+                        <li class="body-container-aside__li"><a href="#" class="reset-link">Партнерам</a></li>
+                        <li class="body-container-aside__li"><a href="#" class="reset-link">Производителям</a></li>
+                        <li class="body-container-aside__li"><a href="#" class="reset-link">Наши сервисные центры</a></li>
+                        <li class="body-container-aside__li"><a href="#" class="reset-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <footer class="body-container-aside__footer">
+                <div class="body-container-aside__connect-form">
+                    <button class="connect-form__phone reset-btn btn-phone btn-before"></button>
+                    <button class="connect-form__message reset-btn btn-message btn-before"></button>
+                    <button class="connect-form__profile reset-btn btn-contact btn-before"></button>
+                </div>
+                <div class="body-container-aside__connect-information">
+                    <a href="mailto:mail@csp.com" class="body-container-aside__info reset-link">mail@csp.com</a>
+                    <a href="tel:88008908900" class="body-container-aside__info phone reset-link">8 800 890 8900</a>
+                </div>
+                <div class="body-container-aside__language">
+                    <button class="reset-btn ru">RU</button>
+                    <button class="reset-btn en">EN</button>
+                    <button class="reset-btn ch">CH</button>
+                </div>
+            </footer>
+        </aside>
+        <section class="body-container__content">это короче мэйн</section>
+    </div>
+    <div class="modal-window modal-window--callback">
+        <h2 class="modal-title">Обратная связь</h2>
+        <input type="text" class="modal-input" placeholder="Имя">
+        <input type="tel" class="modal-input" placeholder="Телефон">
+        <input type="mail" class="modal-input" placeholder="Почта">
+        <textarea name="" id="" cols="30" rows="4" class="modal-input modal-input--message" placeholder="Сообщение"></textarea>
+        <p class="modal-text">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal-link reset-link">обработку 
+            персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal-link reset-link">политикой конфиденциальности</a></p>
+        <button class="modal-button">Отправить<img src="../src/img/arrow-right-white.svg" alt="" class="modal-arrow"></button>
+        <button class="reset-btn modal-exit btn-before ca"></button>
+    </div>
+    <div class="modal-window modal-window--ordercall">
+        <h2 class="modal-title">Заказать звонок</h2>
+        <input type="tel" name="" id="" class="modal-input" placeholder="Телеофон">
+        <p class="modal-text">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal-link reset-link">обработку 
+            персональных данных</a> и соглашаетесь с нашей 
+            <a href="#" class="modal-link reset-link">политикой конфиденциальности</a>
+        </p>
+        <button class="modal-button">Отправить<img src="../src/img/arrow-right-white.svg" alt="" class="modal-arrow"></button>
+        <button class="reset-btn modal-exit btn-before or"></button>
     </div>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
