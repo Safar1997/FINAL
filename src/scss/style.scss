@@ -5,15 +5,26 @@
 @import "reset-link";
 @import "../scss/blocks/section-title.scss";
 @import "../scss/blocks/modal-window.scss";
+@import '../scss/blocks/body.scss';
+@import "../scss/blocks/aside.scss";
+@import '../scss/buttons/btn-burger.scss';
+@import '../scss/buttons/btn-check-status.scss';
+@import '../scss/buttons/btn-contact.scss';
+@import '../scss/buttons/btn-exit.scss';
+@import '../scss/buttons/btn-message.scss';
+@import '../scss/buttons/btn-phone.scss';
+@import '../scss/buttons/btn-repair.scss';
+@import '../scss/buttons/btn-search.scss';
 
 html {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
+body{
+  margin: 0px;
+}
 *, *:before, *:after {
   box-sizing: inherit;
- 
- 
 }
 

@@ -1,0 +1,132 @@
+.body-container-aside{
+    font-family: TTLakes, sans-serif;
+    max-width: 320px;
+    width: 100%;
+    padding: 30px 25px;
+    transition: 0.7s;
+    border-right: 1px solid rgba(172, 166, 166, 0.5);
+    .body-container-aside__header{
+        display: flex;
+        align-items: center;
+    }
+    &__exit{
+        display: none;
+    }
+    &__search{
+        margin-right: 0px;
+        margin-left: auto;
+    }
+    &__input{
+        display: none;
+        vertical-align: middle;
+        height: 40px;
+        width: 120px;
+        margin-right: 0px;
+        margin-left: auto;
+        line-height: 24px;
+        font-size: 16px;
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+        outline: none;
+    }
+    &__ul{
+        margin: 0px;
+        margin-top: 38px;
+    }
+    &__li{
+        font-family: TTLakes;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        margin-top: 28px;
+    }
+    &__li--chosen{
+        color: #7E7E82;
+    }
+    &__li--chosen::before{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 3px;
+        height: 40px;
+        background: #41F6D7;
+        border-radius: 2px;
+        transform: translateX(-25px);
+        
+    }
+    &__footer{
+        margin-top: 240px;
+        
+    }
+    &__connect-form{
+            .connect-form__message{
+                margin-left: 16px;
+            }
+            .connect-form__profile{
+                margin-left: 16px;
+                margin-right: auto;
+            }
+        }
+    &__connect-information{
+        margin-top: 16px;
+    }
+    &__info{
+        display: block;
+        font-weight: 500;
+    }
+    .phone{
+            margin-top: 12px;
+            font-weight: bold;
+        }
+    &__language{
+        margin-top: 40px;
+        .ru{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: red;
+        }
+        .ru:hover{
+            color: red;
+        }
+        .en{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: #1B1C21;
+            margin-left: 7px;
+        }
+        .en:hover{
+            color: red;
+        }
+        .ch{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: #1B1C21;
+            margin-left: 7px;
+        }
+        .ch:hover{
+            color: red;
+        }
+    }
+}
+@media (max-width: 1439px){
+    // .body-container-aside{
+    //     transform: translateX(-100%);
+    // }
+    .body-container-aside__exit{
+        display: initial;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 320px){
+    .body-container-aside__footer{
+        margin-top: 32px;
+    }  
+}

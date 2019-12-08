@@ -1,4 +1,5 @@
 .modal-window{
+    transform: translateX(100%);
     position: fixed;
     top: 0px;
     bottom: 0px;
@@ -6,11 +7,12 @@
     width: 100%;
     max-width: 440px;
     min-width: 320px;
-    overflow: hidden;
-    box-shadow: 0 0 10px 5px rgba(172, 166, 166, 0.5);
-    padding: 31px; //меняется на 16 при 320px
+    box-shadow: 0;
+    padding: 31px; 
+    transition: 0.7s;
 }
 .modal-title{
+    margin-top: -10px;
     font-family:  TTLakes, Tahoma, sans-serif;
     font-size: 24px;
     line-height: 32px;    
@@ -42,27 +44,33 @@
     margin-top: 16px;
     padding: 16px 12px;
     outline: none;
+
+    font-size: 16px;
+    line-height: 24px;
+}
+.modal-input--message{
+    height: initial;
 }
 ::-webkit-input-placeholder {font-family: TTLakes;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #B5B6BC;}
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: -0.2px;
+                            color: #B5B6BC;}
 ::-moz-placeholder          {font-family: TTLakes;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #B5B6BC;}/* Firefox 19+ */
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: -0.2px;
+                            color: #B5B6BC;}/* Firefox 19+ */
 :-moz-placeholder           {font-family: TTLakes;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #B5B6BC;}/* Firefox 18- */
-:-ms-input-placeholder {font-family: TTLakes;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #B5B6BC;}
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: -0.2px;
+                            color: #B5B6BC;}/* Firefox 18- */
+:-ms-input-placeholder      {font-family: TTLakes;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: -0.2px;
+                            color: #B5B6BC;}
 
 .modal-text{
     font-family: TTLakes;
@@ -73,4 +81,60 @@
 }
 .modal-link{
     color: red;
+    
 }
+.modal-button{
+    display: block;
+    width: 136px;
+    height: 32px;
+    margin-right: 17px;
+    margin-left: auto;
+    margin-top: 5px;
+    border-radius: 16px;
+    background-color: #FF3E79;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    //для текста
+    font-family: TTLakes;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    color: white;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    &:hover{
+        background-color: brown;
+    }
+}
+.modal-arrow{
+    margin-left: 15px;
+}
+.modal-exit{
+    // display: none;
+    position: absolute;
+    right: 470px;
+    top: 20px;
+}
+.modal-exit::before{
+    background-image: url("../img/close.svg");
+}
+@media (max-width: 320px){
+    .modal-window{
+        padding: 16px;
+    }
+    .modal-title{
+        margin-top: 70px;
+        &::before{
+            transform: matrix(-1, 0, 0, 1, -15, 0);
+        }
+    }
+    .modal-exit{
+        transform: translateX(210px);
+    }
+    .modal-input{
+        width: 100%;
+        max-width: 288px;
+    }
+}
+
