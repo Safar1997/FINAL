@@ -27,42 +27,90 @@ let modal_ordercall = document.querySelector('.modal-window--ordercall');
 let modal_window = document.querySelector('.modal-window');
 let modal_exit = document.querySelector('.modal-exit');
 
-let ca = document.querySelector('.ca');
-let or = document.querySelector('.or');
+let call = document.querySelector('.call-exit');
+let order = document.querySelector('.order-exit');
 
-ca.style.display = 'none';
-or.style.display = 'none';
+let top_menu_phone = document.querySelector('.top-menu__phone');
+let top_menu_message = document.querySelector('.top-menu__message');
+
+// let html = document.querySelector('html');
+let body_container = document.querySelector('.body-container');
+
+call.style.display = 'none';
+order.style.display = 'none';
+
+top_menu_phone.addEventListener('click', function(evt){
+    evt.preventDefault();
+    modal_exit.style.display = 'none';
+    modal_callback.style.transform = 'translateX(0%)';
+    call.style.display = 'initial';
+    modal_callback.style.boxShadow = '0 0 10px 5px rgba(172, 166, 166, 0.5)';
+    html.style.overflow = 'hidden';
+    modal_callback.style.zIndex = '100';
+    body_container.style.zIndex = '0';
+})
+top_menu_message.addEventListener('click', function(evt){
+    evt.preventDefault();
+    modal_ordercall.style.transform = 'translateX(0%)';
+    order.style.display = 'initial';
+    modal_ordercall.style.boxShadow = '0 0 10px 5px rgba(172, 166, 166, 0.5)';
+    // html.style.overflow = 'hidden';
+    modal_ordercall.style.zIndex = '100';
+    body_container.style.zIndex = '0';
+    
+})
 
 contact.addEventListener('click', function(evt){
     evt.preventDefault();
     modal_exit.style.display = 'none';
     modal_callback.style.transform = 'translateX(0%)';
-    ca.style.display = 'initial';
+    call.style.display = 'initial';
     modal_callback.style.boxShadow = '0 0 10px 5px rgba(172, 166, 166, 0.5)';
+    // html.style.overflow = 'hidden';
+    modal_callback.style.zIndex = '100';
+    body_container.style.zIndex = '0';
 })
 message.addEventListener('click', function(evt){
     evt.preventDefault();
     modal_ordercall.style.transform = 'translateX(0%)';
-    or.style.display = 'initial';
+    order.style.display = 'initial';
     modal_ordercall.style.boxShadow = '0 0 10px 5px rgba(172, 166, 166, 0.5)';
+    // html.style.overflow = 'hidden';
+    modal_ordercall.style.zIndex = '100';
+    body_container.style.zIndex = '0';
+    
 })
 
-ca.addEventListener('click', function(evt){
+call.addEventListener('click', function(evt){
     modal_callback.style.transform = 'translateX(100%)';
+    modal_callback.style.boxShadow = 'none';
     modal_window.style.boxShadow = 'none';
-    ca.style.display = 'none';
+    call.style.display = 'none';
+    // html.style.overflow = 'initial';
 })
-or.addEventListener('click', function(evt){
+order.addEventListener('click', function(evt){
     modal_ordercall.style.transform = 'translateX(100%)';
+    modal_ordercall.style.boxShadow = 'none';
     modal_window.style.boxShadow = 'none';
-    or.style.display = 'none';
+    order.style.display = 'none';
+    // html.style.overflow = 'initial';
 })
 
 aside_exit.addEventListener('click', function(evt){
     evt.preventDefault();
-    aside.style.transform = 'translateX(-100%)';
+    // aside.style.transform = 'translateX(-100%)';
+    aside.style.left = '-100%';
+    aside.style.boxShadow = 'none';
 })
 
+let top_menu_burger = document.querySelector('.top-menu__burger');
+
+top_menu_burger.addEventListener('click', function(evt){
+    evt.preventDefault();
+    aside.style.left = '0%';
+    aside.style.boxShadow = '0 0 10px 5px rgba(172, 166, 166, 0.5)';
+    aside.style.zIndex = '100';
+})
 
 
 

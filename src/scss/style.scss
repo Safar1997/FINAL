@@ -1,5 +1,6 @@
 @import "fonts";
 @import "btn-before";
+@import "btn-after";
 @import "reset-btn";
 @import "reset-list";
 @import "reset-link";
@@ -9,12 +10,18 @@
 @import "../scss/blocks/aside.scss";
 @import '../scss/buttons/btn-burger.scss';
 @import '../scss/buttons/btn-check-status.scss';
+@import "../scss/buttons/btn-check-status-after.scss";
+@import "../scss/buttons/btn-repair-after.scss";
 @import '../scss/buttons/btn-contact.scss';
 @import '../scss/buttons/btn-exit.scss';
 @import '../scss/buttons/btn-message.scss';
 @import '../scss/buttons/btn-phone.scss';
 @import '../scss/buttons/btn-repair.scss';
 @import '../scss/buttons/btn-search.scss';
+@import '../scss/blocks/content.scss';
+@import '../scss/blocks/top-menu.scss';
+@import '../scss/blocks/top.scss';
+@import '../scss/blocks/top-navigation.scss';
 
 html {
   box-sizing: border-box;

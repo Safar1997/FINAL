@@ -10,6 +10,7 @@
     box-shadow: 0;
     padding: 31px; 
     transition: 0.7s;
+    background-color: white;
 }
 .modal-title{
     margin-top: -10px;
@@ -29,7 +30,7 @@
         background: #41F6D7;
         border-radius: 2px;
         transform: matrix(-1, 0, 0, 1, 0, 0);
-        transform: translateX(-31px);
+        transform: translateX(-30px);
     }
 }
 
