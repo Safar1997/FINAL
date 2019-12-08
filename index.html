@@ -20,7 +20,7 @@
         <aside class="body-container-aside">
             <header class="body-container-aside__header">
                 <button class="body-container-aside__exit reset-btn btn-exit btn-before"></button>
-                <a href="#" class="reset-link"><img src="../src/img/logo.svg" alt="Лого" title="Логотип компании" class=""></a>
+                <a href="#" class="reset-link"><img src="/src/img/logo.svg" alt="Лого" title="Логотип компании" class=""></a>
                 <input type="search" name="search" id="" class="body-container-aside__input"> 
                 <button class="body-container-aside__search reset-btn btn-search btn-before"></button>        
             </header>
@@ -55,7 +55,34 @@
                 </div>
             </footer>
         </aside>
-        <section class="body-container__content">это короче мэйн</section>
+        <section class="body-container__content">
+            <div class="top-menu">
+                <button class="top-menu__burger reset-btn btn-before btn-burger"></button>
+                <a href="#" class="top-menu__logo reset-link"><img src="../src/img/logo.svg" alt="Лого" class="header__logo"></a>
+                <button class="top-menu__phone reset-btn btn-phone btn-before"></button>
+                <button class="top-menu__message reset-btn btn-message btn-before"></button>
+                <button class="top-menu__contact reset-btn btn-contact btn-before"></button>
+                <button class="top-menu__repair reset-btn btn-repair btn-before"></button>
+                <button class="top-menu__status reset-btn btn-check-status btn-before"></button>
+            </div>
+            <section class="top">
+                <h2 class="top__title">Услуги и сервисы</h2>
+                <div class="top__links">
+                    <a href="#" class="top__first-link reset-link btn-after btn-repair-after">Оставить заявку</a>
+                    <a href="#" class="top__second-link reset-link btn-after btn-check-status-after">Статус ремонта</a>
+                </div>
+            </section>
+            <nav class="top-navigation">
+                <ul class="top-navigation__list reset-list">
+                    <li class="top-navigation__item"><a href="#" class="reset-link">Ремонтируемые бренды</a></li>
+                    <li class="top-navigation__item"><a href="#" class="reset-link">Ремонтируемые устройства</a></li>
+                    <li class="top-navigation__item"><a href="#" class="reset-link">Цены на услгуи</a></li>
+                    <li class="top-navigation__item"><a href="#" class="reset-link">Адреса сервисных центров</a></li>
+                    <li class="top-navigation__item"><a href="#" class="reset-link">Специальные цены</a></li>
+                    <li class="top-navigation__item"><a href="#" class="reset-link">Отзывы</a></li>
+                </ul>
+            </nav>
+        </section>
     </div>
     <div class="modal-window modal-window--callback">
         <h2 class="modal-title">Обратная связь</h2>
@@ -65,8 +92,8 @@
         <textarea name="" id="" cols="30" rows="4" class="modal-input modal-input--message" placeholder="Сообщение"></textarea>
         <p class="modal-text">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal-link reset-link">обработку 
             персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal-link reset-link">политикой конфиденциальности</a></p>
-        <button class="modal-button">Отправить<img src="../src/img/arrow-right-white.svg" alt="" class="modal-arrow"></button>
-        <button class="reset-btn modal-exit btn-before ca"></button>
+        <button class="modal-button">Отправить<img src="/src/img/arrow-right-white.svg" alt="" class="modal-arrow"></button>
+        <button class="reset-btn modal-exit btn-before call-exit"></button>
     </div>
     <div class="modal-window modal-window--ordercall">
         <h2 class="modal-title">Заказать звонок</h2>
@@ -75,8 +102,8 @@
             персональных данных</a> и соглашаетесь с нашей 
             <a href="#" class="modal-link reset-link">политикой конфиденциальности</a>
         </p>
-        <button class="modal-button">Отправить<img src="../src/img/arrow-right-white.svg" alt="" class="modal-arrow"></button>
-        <button class="reset-btn modal-exit btn-before or"></button>
+        <button class="modal-button">Отправить<img src="/src/img/arrow-right-white.svg" alt="" class="modal-arrow"></button>
+        <button class="reset-btn modal-exit btn-before order-exit"></button>
     </div>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
