@@ -45,7 +45,7 @@ top_menu_phone.addEventListener('click', function(evt){
     modal_callback.style.transform = 'translateX(0%)';
     call.style.display = 'initial';
     modal_callback.style.boxShadow = '0 0 10px 5px rgba(172, 166, 166, 0.5)';
-    html.style.overflow = 'hidden';
+    // html.style.overflow = 'hidden';
     modal_callback.style.zIndex = '100';
     body_container.style.zIndex = '0';
 })
@@ -113,4 +113,27 @@ top_menu_burger.addEventListener('click', function(evt){
 })
 
 
+let show_more = document.querySelector('.about-us__more');
+let paragraph_hidden = document.querySelectorAll('.paragraph--hidden');
 
+let conunt_show = 0;
+show_more.addEventListener('click', function(evt){
+    evt.preventDefault();
+    if (conunt_show %2 ==0){
+        for(let i=0; i<paragraph_hidden.length;i++){
+            paragraph_hidden[i].style.display = 'block';
+        }
+        show_more.classList.add('about-us__more--less');
+        show_more.classList.remove('about-us__more');
+        show_more.textContent = 'Скрыть'
+        conunt_show++;
+    }  else{
+        for(let i=0; i<paragraph_hidden.length;i++){
+            paragraph_hidden[i].style.display = 'none';
+        }
+        show_more.classList.add('about-us__more');
+        show_more.classList.remove('about-us__more--less');
+        show_more.textContent = 'Читать далее'
+        conunt_show++;
+    } 
+})

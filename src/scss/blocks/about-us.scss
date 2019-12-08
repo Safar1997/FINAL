@@ -1,0 +1,94 @@
+
+.about-us{
+    font-family: TTLakes;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    padding: 34px;
+    &__photo{
+        float: right;
+        border-radius: 8px;
+        margin-left: 36px;
+        width: 531px;
+    }
+    &__more{
+        font-family: inherit;
+        font-weight: bold;
+        font-family: TTLakes;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+        margin-top: 10px;
+        &::before{
+            content: '';
+            display: inline-block;
+            background: url('/src/img/all.svg') no-repeat 50% 50%;
+            width: 14px;
+            height: 14px;
+            margin-right: 5px;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__more--less{
+        font-family: inherit;
+        font-weight: bold;
+        font-family: TTLakes;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+        margin-top: 10px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__more--less::before{
+        content: '';
+        display: inline-block;
+        background: url('/src/img/all.svg') no-repeat 50% 50%;
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+        transform: scale(-1); 
+    }
+    .paragraph--hidden{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    .about-us__photo{
+        width: 360px;
+    }
+}
+@media (max-width: 767px){
+    .about-us{
+        padding-top: 24px;
+    }
+    .about-us__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us__paragraphs{
+        order: 0;
+    }
+    .about-us__more{
+        order: 1;
+        align-self: flex-start;
+        margin-bottom: 20px;
+    }
+    .about-us__more--less{
+        order: 1;
+        align-self: flex-start;
+        margin-bottom: 20px;  
+    }
+    .about-us__photo{
+        order: 2;
+        width: 320px;
+        margin: 0;
+    }
+}
