@@ -1,5 +1,8 @@
 import '../scss/style.scss';
 
+let body = document.querySelector('body');
+let html = document.querySelector('html');
+
 let btn_search = document.querySelector('.btn-search');
 let input_search = document.querySelector('.body-container-aside__input');
 let counter = 0;
@@ -45,19 +48,20 @@ top_menu_phone.addEventListener('click', function(evt){
     modal_callback.style.transform = 'translateX(0%)';
     call.style.display = 'initial';
     modal_callback.style.boxShadow = '0 0 10px 5px rgba(172, 166, 166, 0.5)';
-    // html.style.overflow = 'hidden';
+    html.style.overflow = 'hidden';
     modal_callback.style.zIndex = '100';
     body_container.style.zIndex = '0';
+    body.classList.add('body-overlay');
 })
 top_menu_message.addEventListener('click', function(evt){
     evt.preventDefault();
     modal_ordercall.style.transform = 'translateX(0%)';
     order.style.display = 'initial';
     modal_ordercall.style.boxShadow = '0 0 10px 5px rgba(172, 166, 166, 0.5)';
-    // html.style.overflow = 'hidden';
+    html.style.overflow = 'hidden';
     modal_ordercall.style.zIndex = '100';
     body_container.style.zIndex = '0';
-    
+    body.classList.add('body-overlay');
 })
 
 contact.addEventListener('click', function(evt){
@@ -66,18 +70,30 @@ contact.addEventListener('click', function(evt){
     modal_callback.style.transform = 'translateX(0%)';
     call.style.display = 'initial';
     modal_callback.style.boxShadow = '0 0 10px 5px rgba(172, 166, 166, 0.5)';
-    // html.style.overflow = 'hidden';
-    modal_callback.style.zIndex = '100';
+    html.style.overflow = 'hidden';
+    modal_callback.style.zIndex = '110';
     body_container.style.zIndex = '0';
+    aside.style.left = '-100%';
+    aside.style.boxShadow = 'none';
+    body.classList.add('body-overlay');
+    if (window.innerWidth >= 1440){
+        body.style.zIndex = '105';
+    }
 })
 message.addEventListener('click', function(evt){
     evt.preventDefault();
     modal_ordercall.style.transform = 'translateX(0%)';
     order.style.display = 'initial';
     modal_ordercall.style.boxShadow = '0 0 10px 5px rgba(172, 166, 166, 0.5)';
-    // html.style.overflow = 'hidden';
-    modal_ordercall.style.zIndex = '100';
+    html.style.overflow = 'hidden';
+    modal_ordercall.style.zIndex = '110';
     body_container.style.zIndex = '0';
+    aside.style.left = '-100%';
+    aside.style.boxShadow = 'none';
+    if (window.innerWidth >= 1440){
+        body.style.zIndex = '105';
+    }
+    body.classList.add('body-overlay');
     
 })
 
@@ -86,14 +102,16 @@ call.addEventListener('click', function(evt){
     modal_callback.style.boxShadow = 'none';
     modal_window.style.boxShadow = 'none';
     call.style.display = 'none';
-    // html.style.overflow = 'initial';
+    body.classList.remove('body-overlay');
+    html.style.overflow = 'initial';
 })
 order.addEventListener('click', function(evt){
     modal_ordercall.style.transform = 'translateX(100%)';
     modal_ordercall.style.boxShadow = 'none';
     modal_window.style.boxShadow = 'none';
     order.style.display = 'none';
-    // html.style.overflow = 'initial';
+    body.classList.remove('body-overlay');
+    html.style.overflow = 'initial';
 })
 
 aside_exit.addEventListener('click', function(evt){
@@ -101,6 +119,8 @@ aside_exit.addEventListener('click', function(evt){
     // aside.style.transform = 'translateX(-100%)';
     aside.style.left = '-100%';
     aside.style.boxShadow = 'none';
+    body.classList.remove('body-overlay');
+    html.style.overflow = 'initial';
 })
 
 let top_menu_burger = document.querySelector('.top-menu__burger');
@@ -110,6 +130,8 @@ top_menu_burger.addEventListener('click', function(evt){
     aside.style.left = '0%';
     aside.style.boxShadow = '0 0 10px 5px rgba(172, 166, 166, 0.5)';
     aside.style.zIndex = '100';
+    body.classList.add('body-overlay');
+    html.style.overflow = 'hidden';
 })
 
 
