@@ -27,11 +27,11 @@
     &__button::before{
         background-color: white;
         border: 2px solid #FF3E79;
-        background-image: url('../img/arrow-right-pink.svg');
+        background-image: url('img/arrow-right-pink.svg');
     }
     &__button:hover::before{
         background-color: #FF3E79;
-        background-image: url('/img/arrow-right-white.svg'); 
+        background-image: url('img/arrow-right-white.svg'); 
     }
     &__logo{
         margin-left: 16px;
