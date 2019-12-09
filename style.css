@@ -726,7 +726,7 @@
 .brands__button::before {
   background-color: white;
   border: 2px solid #FF3E79;
-  background-image: url("/img/arrow-right-pink.svg"); }
+  background-image: url(./static/arrow-right-pink.svg); }
 
 .brands__button:hover::before {
   background-color: #FF3E79;
