@@ -1,0 +1,37 @@
+.footer{
+    margin: 0;
+    padding-left: 24px;
+    padding-top: 30px;
+    display: flex;
+    border-top: 1px solid #D9FFF5;
+    font-family: TTLakes;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E82;
+    opacity: 0.72;
+    align-items: center;
+    &__copyright{
+        width: 218px;
+        height: 32px;
+    }
+    &__link{
+        width: 214px;
+        height: 16px;
+        margin-right: 40px;
+        margin-left: auto;
+    }
+    &__info{
+        width: 330px;
+        height: 32px;
+        margin-right: 24px;
+        margin-left: auto;
+    }
+}
+@media(max-width: 768px){
+    .footer__info{
+        width: 213px;
+        height: 48px;
+        margin-right: 24px;
+        margin-left: auto;
+    }
+}

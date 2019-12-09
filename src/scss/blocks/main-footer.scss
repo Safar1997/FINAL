@@ -1,25 +1,29 @@
 .main-footer{
     padding: 24px;
+    padding-top: 0;
     font-family: TTLakes;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #1B1C21;
     &__p{
+        margin-top: 0;
         width: 421px;
         height: 60px;
-        margin-top: 16px;
     }
     &__link{
         font-weight: bold;
         &::after{
             content: '';
             display: inline-block;
+            vertical-align: middle;
             margin-left: 10px;
             width: 14px;
-            height: 14px;
-            background: url('/src/img/all.svg') no-repeat 50% 50%;
-            transform: rotate(deg 100);
+            height: 18px;
+            background: url('/src/img/all.svg') no-repeat 50% 160%;
+            background-size: 130%;
+            color: red;
+            transform: rotate(-90deg);
         }
     }
 
