@@ -10,6 +10,7 @@
     <link rel="alternate" hreflang="ru" href="#">
     <link rel="alternate" hreflang="ch" href="#">
     
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="preload" href="fonts/TTLakes-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/TTLakes-Medium.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/TTLakes-Bold.woff2" as="font" crossorigin="anonymous">
@@ -275,28 +276,31 @@
         <button class="modal-button">Отправить<img src="/src/img/arrow-right-white.svg" alt="" class="modal-arrow"></button>
         <button class="reset-btn modal-exit btn-before order-exit"></button>
     </div>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
-  
-    //        if (window.innerWidth < 768){
-    //             var mySwiper_section_2 = new Swiper ('.swiper-container', {
-    //             slidesPerView: 'auto',
-    //             slidesOffsetBefore: 16,
-    //             slidesOffsetAfter: 16,
-    //             spaceBetween: 16,
-    //             pagination: {
-    //             el: '.swiper-pagination',
-    //             clickable: true,
-    //             },
-    //             breakpoints: {
-    //             // when window width is >= MOBILE_PLUS_WIDTH
-    //             360: {
-    //                 slidesOffsetBefore: 24,
-    //                 slidesOffsetAfter: 24,
-    //                 spaceBetween: 24,
-    //             },
-    //             }
-    //     })
-    // }
+   const SWIPER_PARAMS = {
+                slidesPerView: 'auto',
+                spaceBetween: 16,
+                slidesOffsetAfter: 15,
+                slidesOffsetBefore: 15,
+                pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                },
+                breakpoints: {
+                // when window width is >= MOBILE_PLUS_WIDTH
+                360: {
+                    spaceBetween: 24,
+                    slidesOffsetAfter: 24,
+                    slidesOffsetBefore: 24,
+                },
+                }
+        }
+           if (window.innerWidth < 768){
+                var brandsSwiper = new Swiper ('.brands__wrapper', SWIPER_PARAMS);
+                var repairSwiper = new Swiper ('.repair__wrapper', SWIPER_PARAMS);
+                var priseSwiper = new Swiper ('.order__wrapper', SWIPER_PARAMS);
+    }
             </script>
     
 </body>

@@ -52,15 +52,36 @@
         flex-grow: 1;
     }
 }
-@media (max-width: 768px){
+// @media (max-width: 768px){
+//     .repair__wrapper{
+//         padding-right: 15px;
+//     }
+//     .repair__item{
+//         width: 224px;
+//         margin-left: 24px;
+//         &:last-child{
+//             display: none;
+//         }
+//     }
+// }
+@media (max-width: 767px){
     .repair__wrapper{
-        padding-right: 15px;
+        padding-right: 0;
+        
+    }
+    .repair__list{
+        flex-wrap: nowrap;
     }
     .repair__item{
-        width: 224px;
-        margin-left: 24px;
-        &:last-child{
-            display: none;
-        }
+        width: 240px;
+        margin: 0px;
+        box-sizing: border-box;
+        // &:last-child{
+        //     display: none;
+        // }
+        // &:nth-last-child(2){
+        //     display: none;
+        // }
     }
+    
 }

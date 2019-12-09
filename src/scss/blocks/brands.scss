@@ -46,19 +46,24 @@
         flex-grow: 1;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
     .brands__wrapper{
-        padding-right: 15px;
+        padding-right: 0;
+        
+    }
+    .brands__list{
+        flex-wrap: nowrap;
     }
     .brands__item{
-        width: 224px;
-        margin-left: 24px;
-        &:last-child{
-            display: none;
-        }
-        &:nth-last-child(2){
-            display: none;
-        }
+        width: 240px;
+        margin: 0px;
+        box-sizing: border-box;
+        // &:last-child{
+        //     display: none;
+        // }
+        // &:nth-last-child(2){
+        //     display: none;
+        // }
     }
     
 }
