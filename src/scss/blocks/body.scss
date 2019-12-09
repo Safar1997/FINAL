@@ -1,3 +1,9 @@
 .body-container{
     display: flex;
+    max-width: 1440px;
+}
+@media (min-width: 1440px){
+    .body-container{
+        margin: 0 auto;
+    }
 }

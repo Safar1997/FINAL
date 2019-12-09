@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv=" X-UA-Compatible" content="ie=edge">
     <title><%= htmlWebpackPlugin.options.title %></title>
-  
+    
     <link rel="alternate" hreflang="en" href="#">
     <link rel="alternate" hreflang="ru" href="#">
     <link rel="alternate" hreflang="ch" href="#">
@@ -59,7 +59,7 @@
         <section class="body-container__content">
             <div class="top-menu">
                 <button class="top-menu__burger reset-btn btn-before btn-burger"></button>
-                <a href="#" class="top-menu__logo reset-link"><img src="../src/img/logo.svg" alt="Лого" class="header__logo"></a>
+                <a href="#" class="top-menu__logo reset-link"><img src="img/logo.svg" alt="Лого" class="header__logo"></a>
                 <button class="top-menu__phone reset-btn btn-phone btn-before"></button>
                 <button class="top-menu__message reset-btn btn-message btn-before"></button>
                 <button class="top-menu__contact reset-btn btn-contact btn-before"></button>
@@ -118,7 +118,7 @@
             </section>
             <section class="brands">
                 <h2 class="section-title">Ремонт техники различных брендов</h2>
-                <div class="swiper-slider brands__wrapper">
+                <div class="swiper-container brands__wrapper">
                     <ul class="swiper-wrapper reset-list brands__list">
                       <li class="swiper-slide brands__item">
                         <img src="img/brands/lenovo.png" alt="Логотип Lenovo"  class="brands__logo">
@@ -153,13 +153,13 @@
                         <button class="brands__button reset-btn btn-before"></button>
                       </li>
                     </ul>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination "></div>
                   </div>
                   <button class="brands__show-more reset-btn about-us__more">Показать все(9)</button>
             </section>
             <section class="repair">
                <h2 class="section-title">Ремонт различных видов техники</h2>
-                <div class="swiper-slider repair__wrapper">
+                <div class="swiper-container repair__wrapper">
                     <ul class="swiper-wrapper reset-list repair__list">
                       <li class="swiper-slide repair__item">
                         <span class="repair__text">Ремонт ноутбуков</span>
@@ -184,7 +184,7 @@
             </section>
             <section class="order">
                     <h2 class="section-title">Цены на услуги</h2>
-                    <div class="order__wrapper swiper-slider">
+                    <div class="order__wrapper swiper-container">
                       <ul class="order__list swiper-wrapper reset-list">
                         <li class="order__item order__item--header">
                             <span class="order__span--header">Ремонтные услуги</span>
@@ -193,8 +193,8 @@
                             <span class="order__span--header"></span>
                         </li>
                         <li class="order__item  swiper-slide">
-                            <span class="order__span" >Диагностика</span>
-                            <span class="order__span" >Бесплатно</span>
+                            <span class="order__span">Диагностика</span>
+                            <span class="order__span">Бесплатно</span>
                             <span class="order__span">30-120 мин</span>
                             <span class="order__span">
                             <button class="order__button reset-btn modal-button">Заказать<img src="/src/img/arrow-right-white.svg" alt="" class="modal-arrow"></button>
