@@ -39,16 +39,111 @@
         opacity: 0.72;
     }
 }
+
 @media(max-width: 1439px){
     .order{
         padding-top: 24px;
     }
 }
-@media(max-width: 768px){
+@media(min-width: 767px){
+    .order__wrapper{
+        padding: 32px;
+    }
     .order__list{
+        box-sizing: border-box;
+        display: initial;
+    }
+    .order__item{
+        padding-top: 23px;
+        width: 1056px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #EAEAEA;;
+    }
+    .order__span--header:nth-child(2){
+        margin-right: 225px;
+        margin-left: auto;
+    }
+    .order__span--header:nth-child(3){
+        margin-right: 240px;
+    }
+    .order__span:nth-last-child(3){
+        margin-right: 175px;
+        margin-left: auto;
+    }
+    .order__span:nth-last-child(2){
+        margin-right: 111px;
+    }
+    .order__span:last-child{
+        width: 119px;
+        height: 32px;
+        margin-right: 16px;
+    }
+}
+@media(max-width: 768px){
+    
+    .order__list{
+        box-sizing: border-box;
+    }
+    .order__list{
+        font-family: TTLakes;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+        // width: 720px;
+        height: 324px;
+    }
+    .order__item{
         width: 720px;
+        padding: 16px;
     }
     .order__wrapper{
         padding-right: 24px;
+        padding-left: 24px;
     }
+    .order__span--header:nth-child(2){
+        margin-right: 80px;
+        margin-left: auto;
+    }
+    .order__span--header:nth-child(3){
+        margin-right: 159px;
+    }
+    .order__span:nth-last-child(3){
+        margin-right: 44px;
+        margin-left: auto;
+    }
+    .order__span:nth-last-child(2){
+        margin-right: 20px;
+    }
+    .order__span:last-child{
+        width: 119px;
+        height: 32px;
+    }
+    .order__button{
+        margin: 0;
+    }
+}
+@media (max-width: 767px){
+    .order{
+        padding-top: 25px;
+    }
+    .order__wrapper{
+        padding-right: 0;
+        padding-left: 8px;
+    }
+    .order__list{
+        height: 100%;
+    }
+    .order__item{
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 260px;
+        height: 200px;
+    }
+    .order__item--header{
+        display: none;
+    }
+    
 }
