@@ -621,7 +621,7 @@
     .about-us__more::before {
       content: '';
       display: inline-block;
-      background: url("/src/img/all.svg") no-repeat 50% 50%;
+      background: url("/img/all.svg") no-repeat 50% 50%;
       width: 14px;
       height: 14px;
       margin-right: 5px; }
@@ -641,7 +641,7 @@
   .about-us__more--less::before {
     content: '';
     display: inline-block;
-    background: url("/src/img/all.svg") no-repeat 50% 50%;
+    background: url("/img/all.svg") no-repeat 50% 50%;
     width: 14px;
     height: 14px;
     margin-right: 5px;
@@ -1047,7 +1047,7 @@
       margin-left: 10px;
       width: 14px;
       height: 18px;
-      background: url("/src/img/all.svg") no-repeat 50% 160%;
+      background: url("/img/all.svg") no-repeat 50% 160%;
       background-size: 130%;
       color: red;
       -webkit-transform: rotate(-90deg);
