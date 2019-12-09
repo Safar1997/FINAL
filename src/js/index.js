@@ -168,3 +168,33 @@ brands_show_more.addEventListener('click', function(evt){
         count_brands++;
     } 
 })
+
+let repair_show_more = document.querySelector('.repair__show-more');
+let repair_list = document.querySelector('.repair__list');
+let repair_item = document.querySelectorAll('.repair__item');
+let clone_repair_list = [];
+for(let i=0; i< repair_item.length; i++){
+    clone_repair_list[i] = repair_item[i].cloneNode(true);
+}
+let count_repair = 0;    
+
+repair_show_more.addEventListener('click', function(evt){
+    evt.preventDefault();
+    if (count_repair %2 ==0){
+        for(let i=0; i<clone_repair_list.length;i++){
+            repair_list.appendChild(clone_repair_list[i]);
+        }
+        repair_show_more.classList.remove('about-us__more');
+        repair_show_more.classList.add('about-us__more--less');
+        repair_show_more.textContent = 'Скрыть'
+        count_repair++;
+    }  else{
+        for(let i=0; i<clone_repair_list.length;i++){
+            repair_list.removeChild(clone_repair_list[i]);
+        }
+        repair_show_more.classList.add('about-us__more');
+        repair_show_more.classList.remove('about-us__more--less');
+        repair_show_more.textContent = 'Показать все(9)'
+        count_repair++;
+    } 
+})
