@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta keywords="ноутбук, ремонт, Dell, сервисный центр">
+    <meta description="Автоматизированный сервисный центр по ремонту ноутбуков Dell">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv=" X-UA-Compatible" content="ie=edge">
-    <title>Webpack 4 Starter</title>
+    <title>Услуги и сервисы</title>
     
     <link rel="alternate" hreflang="en" href="#">
     <link rel="alternate" hreflang="ru" href="#">
@@ -16,40 +18,37 @@
     <link rel="preload" href="fonts/TTLakes-Bold.woff2" as="font" crossorigin="anonymous">
 <link href="style.css" rel="stylesheet"></head>
 <body>
-    
     <div class="body-container">
-        <aside class="body-container-aside">
-            <header class="body-container-aside__header">
-                <button class="body-container-aside__exit reset-btn btn-exit btn-before"></button>
+        <aside class="aside">
+            <header class="aside__header">
+                <button class="aside__exit reset-btn btn-exit btn-before"></button>
                 <a href="#" class="reset-link"><img src="img/logo.svg" alt="Лого" title="Логотип компании" class=""></a>
-                <input type="search" name="search" id="" class="body-container-aside__input"> 
-                <button class="body-container-aside__search reset-btn btn-search btn-before"></button>        
+                <input type="search" name="search" id="" class="aside__input"> 
+                <button class="aside__search reset-btn btn-search btn-before"></button>        
             </header>
-            <section class="body-container-aside__section">
-                <nav class="body-container-aside__nav">
-                    <ul class="body-container-aside__ul reset-list">
-                        <li class="body-container-aside__li"><a href="#" class="reset-link">Ремонт техники</a></li>
-                        <li class="body-container-aside__li body-container-aside__li--chosen"><a href="#" class="reset-link">Услуги и сервисы</a></li>
-                        <li class="body-container-aside__li"><a href="#" class="reset-link">Корпоративным клиентам</a></li>
-                        <li class="body-container-aside__li"><a href="#" class="reset-link">Продавцам техники</a></li>
-                        <li class="body-container-aside__li"><a href="#" class="reset-link">Партнерам</a></li>
-                        <li class="body-container-aside__li"><a href="#" class="reset-link">Производителям</a></li>
-                        <li class="body-container-aside__li"><a href="#" class="reset-link">Наши сервисные центры</a></li>
-                        <li class="body-container-aside__li"><a href="#" class="reset-link">Контакты</a></li>
+            <nav class="aside__nav">
+                    <ul class="aside__list reset-list">
+                        <li class="aside__item"><a href="#" class="reset-link">Ремонт техники</a></li>
+                        <li class="aside__item aside__item--chosen"><a href="#" class="reset-link">Услуги и сервисы</a></li>
+                        <li class="aside__item"><a href="#" class="reset-link">Корпоративным клиентам</a></li>
+                        <li class="aside__item"><a href="#" class="reset-link">Продавцам техники</a></li>
+                        <li class="aside__item"><a href="#" class="reset-link">Партнерам</a></li>
+                        <li class="aside__item"><a href="#" class="reset-link">Производителям</a></li>
+                        <li class="aside__item"><a href="#" class="reset-link">Наши сервисные центры</a></li>
+                        <li class="aside__item"><a href="#" class="reset-link">Контакты</a></li>
                     </ul>
-                </nav>
-            </section>
-            <footer class="body-container-aside__footer">
-                <div class="body-container-aside__connect-form">
+            </nav>
+            <footer class="aside__footer">
+                <div class="aside__connect-form">
                     <button class="connect-form__phone reset-btn btn-phone btn-before"></button>
                     <button class="connect-form__message reset-btn btn-message btn-before"></button>
                     <button class="connect-form__profile reset-btn btn-contact btn-before"></button>
                 </div>
-                <div class="body-container-aside__connect-information">
-                    <a href="mailto:mail@csp.com" class="body-container-aside__info reset-link">mail@csp.com</a>
-                    <a href="tel:88008908900" class="body-container-aside__info phone reset-link">8 800 890 8900</a>
+                <div class="aside__connect-information">
+                    <a href="mailto:mail@csp.com" class="aside__info reset-link">mail@csp.com</a>
+                    <a href="tel:88008908900" class="aside__info phone reset-link">8 800 890 8900</a>
                 </div>
-                <div class="body-container-aside__language">
+                <div class="aside__language">
                     <button class="reset-btn ru">RU</button>
                     <button class="reset-btn en">EN</button>
                     <button class="reset-btn ch">CH</button>
@@ -67,7 +66,7 @@
                 <button class="top-menu__status reset-btn btn-check-status btn-before"></button>
             </div>
             <section class="top">
-                <h2 class="top__title">Услуги и сервисы</h2>
+                <h1 class="top__title">Услуги и сервисы</h1>
                 <div class="top__links">
                     <a href="#" class="top__first-link reset-link btn-after btn-repair-after">Оставить заявку</a>
                     <a href="#" class="top__second-link reset-link btn-after btn-check-status-after">Статус ремонта</a>
@@ -239,7 +238,7 @@
                     </div>
                   </section>
             <section class="main-footer">
-                <p class="main-footer__p">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу.
+                <p class="main-footer__paragraph">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу.
                     Для
                     получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
                 <a href="#" class="main-footer__link reset-link">Получить
@@ -256,7 +255,7 @@
         </section>
     </div>
     <div class="modal-window modal-window--callback">
-        <h2 class="modal-title">Обратная связь</h2>
+        <h1 class="modal-title">Обратная связь</h1>
         <input type="text" class="modal-input" placeholder="Имя">
         <input type="tel" class="modal-input" placeholder="Телефон">
         <input type="mail" class="modal-input" placeholder="Почта">
@@ -267,7 +266,7 @@
         <button class="reset-btn modal-exit btn-before call-exit"></button>
     </div>
     <div class="modal-window modal-window--ordercall">
-        <h2 class="modal-title">Заказать звонок</h2>
+        <h1 class="modal-title">Заказать звонок</h1>
         <input type="tel" name="" id="" class="modal-input" placeholder="Телеофон">
         <p class="modal-text">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal-link reset-link">обработку 
             персональных данных</a> и соглашаетесь с нашей 
