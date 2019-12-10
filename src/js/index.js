@@ -52,6 +52,16 @@ top_menu_phone.addEventListener('click', function(evt){
     modal_callback.style.zIndex = '100';
     body_container.style.zIndex = '0';
     body.classList.add('body-overlay');
+        //скрыть при нажатии на оверлей
+        document.addEventListener('click', (evt) => {
+            if (evt.target === document.body) {
+                modal_callback.style.transform = 'translateX(100%)';
+                call.style.display = 'none';
+                modal_callback.style.boxShadow = 'none';
+                body.classList.remove('body-overlay');
+            }
+          })
+        // **************************
 })
 top_menu_message.addEventListener('click', function(evt){
     evt.preventDefault();
@@ -62,6 +72,16 @@ top_menu_message.addEventListener('click', function(evt){
     modal_ordercall.style.zIndex = '100';
     body_container.style.zIndex = '0';
     body.classList.add('body-overlay');
+        //скрыть при нажатии на оверлей
+        document.addEventListener('click', (evt) => {
+            if (evt.target === document.body) {
+                modal_ordercall.style.transform = 'translateX(100%)';
+                order.style.display = 'none';
+                modal_ordercall.style.boxShadow = 'none';
+                body.classList.remove('body-overlay');
+            }
+          })
+        // **************************
 })
 
 contact.addEventListener('click', function(evt){
@@ -79,6 +99,16 @@ contact.addEventListener('click', function(evt){
     if (window.innerWidth >= 1440){
         body.style.zIndex = '105';
     }
+        //скрыть при нажатии на оверлей
+        document.addEventListener('click', (evt) => {
+            if (evt.target === document.body) {
+                modal_callback.style.transform = 'translateX(100%)';
+                call.style.display = 'none';
+                modal_callback.style.boxShadow = 'none';
+                body.classList.remove('body-overlay');
+            }
+          })
+        // **************************
 })
 message.addEventListener('click', function(evt){
     evt.preventDefault();
@@ -94,6 +124,16 @@ message.addEventListener('click', function(evt){
         body.style.zIndex = '105';
     }
     body.classList.add('body-overlay');
+    //скрыть при нажатии на оверлей
+    document.addEventListener('click', (evt) => {
+        if (evt.target === document.body) {
+            modal_ordercall.style.transform = 'translateX(100%)';
+            order.style.display = 'none';
+            modal_ordercall.style.boxShadow = 'none';
+            body.classList.remove('body-overlay');
+        }
+      })
+    // **************************
     
 })
 
@@ -132,6 +172,14 @@ top_menu_burger.addEventListener('click', function(evt){
     aside.style.zIndex = '100';
     body.classList.add('body-overlay');
     html.style.overflow = 'hidden';
+    //скрыть при нажатии на оверлей
+    document.addEventListener('click', (evt) => {
+        if (evt.target === document.body) {
+            aside.style.left = '-100%';
+            body.classList.remove('body-overlay');
+        }
+      })
+    // **************************
 })
 
 
