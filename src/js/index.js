@@ -59,6 +59,7 @@ top_menu_phone.addEventListener('click', function(evt){
                 call.style.display = 'none';
                 modal_callback.style.boxShadow = 'none';
                 body.classList.remove('body-overlay');
+                html.style.overflow = 'initial';
             }
           })
         // **************************
@@ -79,6 +80,7 @@ top_menu_message.addEventListener('click', function(evt){
                 order.style.display = 'none';
                 modal_ordercall.style.boxShadow = 'none';
                 body.classList.remove('body-overlay');
+                html.style.overflow = 'initial';
             }
           })
         // **************************
@@ -106,6 +108,7 @@ contact.addEventListener('click', function(evt){
                 call.style.display = 'none';
                 modal_callback.style.boxShadow = 'none';
                 body.classList.remove('body-overlay');
+                html.style.overflow = 'initial';
             }
           })
         // **************************
@@ -131,6 +134,7 @@ message.addEventListener('click', function(evt){
             order.style.display = 'none';
             modal_ordercall.style.boxShadow = 'none';
             body.classList.remove('body-overlay');
+            html.style.overflow = 'initial';
         }
       })
     // **************************
@@ -177,6 +181,7 @@ top_menu_burger.addEventListener('click', function(evt){
         if (evt.target === document.body) {
             aside.style.left = '-100%';
             body.classList.remove('body-overlay');
+            html.style.overflow = 'initial';
         }
       })
     // **************************
